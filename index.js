@@ -49,7 +49,7 @@ function promptUser() {
       {
         type: "input",
         name: "questions",
-        message: "Any questions or concerns?"
+        message: "GitHub username?"
       },
   ]);
 }
@@ -78,7 +78,7 @@ ${response.install}
 ${response.usage}
 
 ----
-### Contributors
+### Contributing
 ${response.contributors}
 
 ----
@@ -87,8 +87,7 @@ ${response.tests}
 
 ---
 ### FAQ
-${response.questions}
-
+[${response.questions}] (https://github.com/${response.questions})
 *licensing*
 
 ${response.license}`;
