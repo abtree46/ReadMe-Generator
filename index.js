@@ -54,49 +54,49 @@ function promptUser() {
   ]);
 }
 
-function generateMarkdown(answers) {
+function generateMarkdown(response) {
   return `
-  #  ${answers.title}
+  #  ${response.title}
 
 
-${answers.description}
+${response.description}
 ----
 
 ### Table of Contents
 
  
- ${answers.contents}
+ ${response.contents}
 
 ----
 ### Preferred Installation
 
-${answers.install}
+${response.install}
 
 ----
 ### Usage
 
-${answers.usage}
+${response.usage}
 
 ----
 ### Contributors
-${answers.contributors}
+${response.contributors}
 
 ----
 ### Tests
-${answers.tests}
+${response.tests}
 
 ---
 ### FAQ
-${answers.questions}
+${response.questions}
 
 *licensing*
 
-${answers.license}`;
+${response.license}`;
 }
 
 promptUser()
-  .then(function(answers) {
-    const md = generateMarkdown(answers);
+  .then(function(response) {
+    const md = generateMarkdown(response);
 
     return writeFileAsync("README.md", md);
   })
