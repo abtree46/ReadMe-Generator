@@ -31,11 +31,11 @@ function promptUser() {
         name: "usage",
         message: "How is it intened to be used?"
       },
-    //   {
-    //     type: "input",
-    //     name: "license",
-    //     message: "Which license?"
-    //   },
+      {
+        type: "input",
+        name: "license",
+        message: "Which license?"
+      },
     {
         type: "input",
         name: "contributors",
