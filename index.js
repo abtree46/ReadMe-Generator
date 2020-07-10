@@ -83,15 +83,15 @@ ${answers.contributors}
 
 ----
 ### Tests
-${}
+${answers.tests}
 
 ---
 ### FAQ
-questions
+${answers.questions}
 
 *licensing*
 
-license`;
+${answers.license}`;
 }
 
 promptUser()
